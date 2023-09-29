@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(17, 14, 14, 0.6), rgba(242, 2, 2, 0.5));
+  height: 100vh;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  gap: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+  padding: 1rem;
+}
+.output {
+  outline: none;
+  border: none;
+}
+.text {
+  outline: none;
+  width: 250px;
+  height: 60px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: right;
+  border: 5px solid rgb(53, 44, 44);
+}
+.calculator input:not(.text, .equals) {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.calculator input:not(.text, .equals, .ac, .del):hover {
+  transition: all 0.5s ease-in-out;
+  background-color: black;
+  color: white;
+}
+.equals {
+  width: 120px;
+  height: 60px;
+  border-radius: 40%;
+  font-weight: 600;
+  font-size: 30px;
+}
+.equals:hover {
+  color: aliceblue;
+  background: linear-gradient(rgba(17, 14, 14, 0.6), rgba(242, 2, 2, 0.5));
+
+  transition: all 0.5s ease-in-out;
+}
+.ac:hover {
+  background-color: green;
+  transition: 0.5s;
+  color: white;
+}
+.del:hover {
+  background-color: red;
+  transition: 0.5s;
+  color: white;
+}
